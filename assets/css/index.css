@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+
+@font-face {
+  font-family: "conthrax";
+  src: local("conthrax"),
+   url(./assets/fonts/conthrax.ttf) format("truetype");
+}
+
+body {
+    font-family: "conthrax", Helvetica, Arial;
+    position: relative;
+    font-family: 'Mina', sans-serif;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+h1 {
+    color: #6a62b8;
+    margin-top: -3vh;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6a62b8;
+}
+
+input {
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button {
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px 25px 10px;
+    background-color: #1e486b;
+    font-weight: bold;
+    border: 2px solid #1F1F1F;
+    right: 10px;
+    -webkit-app-region: no-drag;
+}
+
+#current-btc-price {
+    font-size: 14px;
+}
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+  }
+  

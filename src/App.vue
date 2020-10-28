@@ -1,57 +1,30 @@
 <template>
-<div id="app">
-    <app-header />
-    <h1>TESTTEST</h1>
-    <router-view />
-</div>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
 
-<script>
-import appHeader from "./components/Header.vue";
-export default {
-    name: "layout",
-    components: {
-        appHeader,
-    },
-};
-</script>
-
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Staatliches&display=swap");
-
-html,
 #app {
-    min-height: 100vh;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 
-#app {
-    font-family: "Abel", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    background-color: #141414ce;
+#nav {
+  padding: 30px;
 }
 
-#app h1 {
-    font-family: "Staatliches", cursive;
-}
-  body {
-    overflow: hidden;
-    background-color: #141414;
-  }
-a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-a:hover {
-    text-decoration: underline;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
-
-a.router-link-exact-active {
-    color: #42b983;
-}
-
 </style>
